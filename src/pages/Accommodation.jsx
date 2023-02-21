@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 function Accomodation(){
     return (
         <div>
-            <h1>Accomodation</h1>
+            <Header/>
         </div>
     )
 }

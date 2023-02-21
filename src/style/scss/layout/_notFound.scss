@@ -1,0 +1,40 @@
+.not-found {
+    text-align: center;
+    padding: 0 25px;
+    color: $primary-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+    &__status {
+        font-size: 288px;
+        font-weight: 700;
+
+        @include screen-md {
+            font-size: 220px;
+        }
+
+        @include screen-sm {
+            font-size: 96px;
+        }
+    }
+
+    &__explanation {
+        font-size: 36px;
+
+        @include screen-sm {
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        color: $primary-color;
+        font-size: 18px;
+
+        @include screen-sm {
+            font-size: 14px;
+        }
+    }
+}
