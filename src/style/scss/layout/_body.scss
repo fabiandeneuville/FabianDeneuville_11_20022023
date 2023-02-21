@@ -1,0 +1,8 @@
+body {
+    width: 85%;
+    margin: auto;
+
+    @include screen-sm {
+        width: 95%;
+    }
+}
