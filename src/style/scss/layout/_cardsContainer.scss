@@ -1,0 +1,12 @@
+.cards__container {
+    width: 90%;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: $light-grey;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
