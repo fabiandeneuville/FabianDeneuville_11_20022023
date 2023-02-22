@@ -1,12 +1,10 @@
 .header {
+    width: 90%;
     padding: 20px 0;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-    @include screen-sm {
-        padding: 20px;
-    }
 
     &__logo {
         width: 200px;
