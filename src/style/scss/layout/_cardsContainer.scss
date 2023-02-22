@@ -1,5 +1,6 @@
 .cards__container {
     width: 90%;
+    max-width: 1300px;
     margin: 25px auto;
     padding: 25px;
     background-color: $light-grey;
@@ -9,4 +10,5 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 25px;
+    margin-bottom: 200px;
 }

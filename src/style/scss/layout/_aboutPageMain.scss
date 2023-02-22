@@ -1,0 +1,13 @@
+.about__page__main {
+    width: 80%;
+    max-width: 800px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 200px;
+
+    @include screen-sm {
+        width: 90%;
+    }
+}
