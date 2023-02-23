@@ -7,6 +7,11 @@
     align-items: center;
     justify-content: flex-start;
 
+    @include screen-xsm {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     &__logo {
         width: 200px;
 
@@ -17,6 +22,10 @@
 
     &__nav {
         margin-left: auto;
+
+        @include screen-xsm {
+            margin: auto;
+        }
 
         &__link {
             padding: 5px;

@@ -1,0 +1,29 @@
+.accomodation__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $primary-color;
+
+    @include screen-sm {
+        gap: 5px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+
+        @include screen-sm {
+            font-size: 18px;
+        }
+    }
+
+    &__location {
+        font-size: 18px;
+        font-weight: 500;
+
+        @include screen-sm {
+            font-size: 14px;
+        }
+    }
+
+}

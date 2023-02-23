@@ -1,10 +1,80 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router";
 
-function Accomodation(){
+import Header from '../components/Header';
+import AccomodationIntro from '../components/AccomodationIntro';
+import Collapse from '../components/Collapse';
+import Footer from '../components/Footer';
+import Loader from '../components/Loader';
+
+function Accomodation(props){
+    const { id } = useParams();
+    const navigate = useNavigate()
+    const [accomodation, setAccomodation] = useState(null);
+    const [showLoader, setShowLoader] = useState(false);
+
+    useEffect(() => {
+        fetchAccomodation(id)
+    }, [id])
+
+    const fetchAccomodation = (id) => {
+        setShowLoader(true)
+        fetch('/datas.json')
+        .then((response) => response.json())
+        .then((datas) => {
+            const accomodation = datas.find((item) => item.id === id);
+            if(!accomodation){
+                navigate('/not-found')
+            }
+            setAccomodation(accomodation);
+            setShowLoader(false)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }
+
     return (
+
         <div className="page">
+            {showLoader &&
+                <Loader/>
+            }
             <Header/>
+
+            {accomodation &&
+                <main className="accomodation__page__main">
+                    <AccomodationIntro
+                    title={accomodation.title}
+                    location={accomodation.location}
+                    tags={accomodation.tags}
+                    />
+                    <div className="accomodation__content">
+                        <Collapse
+                        heading={"Description"}
+                        >
+                            <p className="accomodation__content__description">{accomodation.description}</p>
+                        </Collapse>
+                        <Collapse
+                        heading={"Équipements"}
+                        >
+                            <ul className="accomodation__content__equipment__list">
+                                {accomodation.equipments.map((equipment, index) => {
+                                    return (
+                                        <li 
+                                        key={index}
+                                        className="accomodation__content__equipment__item"
+                                        >
+                                            {equipment}
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </Collapse>
+                    </div>
+                </main>
+            }
             <Footer/>
         </div>
     )

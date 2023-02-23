@@ -2,11 +2,11 @@
     text-align: center;
     padding: 0 25px;
     color: $primary-color;
-    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    margin-bottom: 200px;
 
     &__status {
         font-size: 288px;

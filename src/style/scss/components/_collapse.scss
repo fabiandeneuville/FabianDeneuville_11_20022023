@@ -1,6 +1,7 @@
 .collapse {
 
     font-size: 24px;
+    width: 100%;
 
     &__header {
         cursor: pointer;
@@ -12,6 +13,12 @@
         align-items: center;
         background-color: $primary-color;
         color: white;
+
+        & img {
+            @include screen-sm {
+                width: 15px;
+            }
+        }
 
         @include screen-sm {
             font-size: 13px;

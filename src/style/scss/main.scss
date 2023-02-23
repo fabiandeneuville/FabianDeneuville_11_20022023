@@ -9,9 +9,15 @@
 @import"./layout/header";
 @import"./layout/cardsContainer";
 @import"./layout/aboutPageMain";
+@import"./layout/accomodationPageMain";
+@import"./layout/accomodationIntro";
+@import"./layout/tagsContainer";
+@import"./layout/accomodationContent";
 @import"./layout/footer";
 @import"./layout/notFound";
 
 @import"./components/banner";
 @import"./components/card";
 @import"./components/collapse";
+@import"./components//loader";
+@import"./components/tag";

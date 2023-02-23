@@ -1,0 +1,26 @@
+.accomodation__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @include screen-md {
+        flex-direction: column;
+    }
+
+    &__description {
+        font-size: 18px;
+
+        @include screen-sm {
+            font-size: 13px;
+        }
+    }
+
+    &__equipment__list {
+        list-style-type: none;
+        font-size: 18px;
+
+        @include screen-sm {
+            font-size: 13px;
+        }
+    }
+}
