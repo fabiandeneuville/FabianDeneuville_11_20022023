@@ -24,6 +24,8 @@
         margin-top: 2px;
         background-color: $light-grey;
         color: $primary-color;
+        animation-name: show;
+        animation-duration: 0.4s;
 
         @include screen-sm {
             font-size: 12px;
