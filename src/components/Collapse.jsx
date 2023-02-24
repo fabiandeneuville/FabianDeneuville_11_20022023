@@ -1,6 +1,5 @@
 import { useState } from "react";
-import chevronUp from '../assets/images/chevron-up.png';
-import chevronDown from '../assets/images/chevron-down.png';
+import chevron from '../assets/images/chevron.png';
 
 function Collapse(props){
 
@@ -19,12 +18,8 @@ function Collapse(props){
                 <div>
                     {props.heading}
                 </div>
-                <div>
-                    {opened ? (
-                        <img src={chevronUp} alt="Chevron vers le haut" />
-                    ) : (
-                        <img src={chevronDown} alt="Chevron vers le bas"/>
-                    )}
+                <div className={opened ? "chevron opened" : "chevron closed"}>
+                    <img src={chevron} alt="chevron"/>
                 </div>
             </div>
             {opened && 

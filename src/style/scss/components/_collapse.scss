@@ -4,6 +4,7 @@
     width: 100%;
 
     &__header {
+
         cursor: pointer;
         border-radius: 5px;
         padding: 10px 15px;
@@ -15,6 +16,7 @@
         color: white;
 
         & img {
+
             @include screen-sm {
                 width: 15px;
             }
@@ -38,4 +40,17 @@
             font-size: 12px;
         }
     }
+}
+
+.chevron {
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.chevron.opened {
+    transform: rotate(180deg);
+}
+
+.chevron.closed {
+    transform: rotate(0deg);
 }
