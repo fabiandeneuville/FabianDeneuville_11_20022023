@@ -5,7 +5,7 @@ function Host(props){
                 {props.name}
             </p>
             <div className="host__picture">
-                <img src={props.picture} alt={`Photo de ${props.name}`}/>
+                <img src={props.picture} alt={`${props.name}`}/>
             </div>
         </div>
     )
