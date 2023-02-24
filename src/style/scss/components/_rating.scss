@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    gap: 5px;
+
+    &__star {
+        height: 30px;
+
+        @include screen-sm {
+            height: 15px;
+        }
+    }
+}
