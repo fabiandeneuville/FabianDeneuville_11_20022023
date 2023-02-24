@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router";
 
 import Header from '../components/Header';
+import Carousel from '../components/Carousel';
 import AccomodationIntro from '../components/AccomodationIntro';
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
@@ -45,6 +46,10 @@ function Accomodation(props){
 
             {accomodation &&
                 <main className="accomodation__page__main">
+                    <Carousel
+                    pictures={accomodation.pictures}
+                    altText={accomodation.title}
+                    />
                     <AccomodationIntro
                     title={accomodation.title}
                     location={accomodation.location}
