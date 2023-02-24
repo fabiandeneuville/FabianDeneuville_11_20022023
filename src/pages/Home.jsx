@@ -19,7 +19,7 @@ function Home(){
 
     const fetchAllAccomodations = () => {
         setShowLoader(true)
-        fetch('/datas.json')
+        fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
         .then((response) => response.json())
         .then((datas) => {
             setAccomodations(datas)

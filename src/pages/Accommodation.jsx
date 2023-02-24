@@ -23,7 +23,7 @@ function Accomodation(props){
 
     const fetchAccomodation = (id) => {
         setShowLoader(true)
-        fetch('/datas.json')
+        fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
         .then((response) => response.json())
         .then((datas) => {
             const accomodation = datas.find((item) => item.id === id);
