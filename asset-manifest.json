@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FabianDeneuville_11_20022023/static/css/main.23db8da1.css",
-    "main.js": "/FabianDeneuville_11_20022023/static/js/main.c846394a.js",
-    "static/media/about-banner.png": "/FabianDeneuville_11_20022023/static/media/about-banner.6c79766be217203aa351.png",
-    "static/media/home-banner.png": "/FabianDeneuville_11_20022023/static/media/home-banner.e76961bbfb39d9c6c040.png",
-    "static/media/logo-kasa.svg": "/FabianDeneuville_11_20022023/static/media/logo-kasa.759702e80d2cca5e6d54b41ca6682c02.svg",
-    "index.html": "/FabianDeneuville_11_20022023/index.html",
-    "static/media/emptyStar.svg": "/FabianDeneuville_11_20022023/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
-    "static/media/fullStar.svg": "/FabianDeneuville_11_20022023/static/media/fullStar.6430150c126a3adf92c132c52c9c7428.svg",
-    "main.23db8da1.css.map": "/FabianDeneuville_11_20022023/static/css/main.23db8da1.css.map",
-    "main.c846394a.js.map": "/FabianDeneuville_11_20022023/static/js/main.c846394a.js.map"
+    "main.css": "/static/css/main.88fa372b.css",
+    "main.js": "/static/js/main.ac2c5321.js",
+    "static/media/about-banner.png": "/static/media/about-banner.6c79766be217203aa351.png",
+    "static/media/home-banner.png": "/static/media/home-banner.e76961bbfb39d9c6c040.png",
+    "static/media/logo-kasa.svg": "/static/media/logo-kasa.759702e80d2cca5e6d54b41ca6682c02.svg",
+    "index.html": "/index.html",
+    "static/media/emptyStar.svg": "/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/fullStar.svg": "/static/media/fullStar.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.88fa372b.css.map": "/static/css/main.88fa372b.css.map",
+    "main.ac2c5321.js.map": "/static/js/main.ac2c5321.js.map"
   },
   "entrypoints": [
-    "static/css/main.23db8da1.css",
-    "static/js/main.c846394a.js"
+    "static/css/main.88fa372b.css",
+    "static/js/main.ac2c5321.js"
   ]
 }
