@@ -1,7 +1,5 @@
-import Header from '../components/Header';
 import Banner from '../components/Banner';
 import CardsContainer from '../components/CardsContainer';
-import Footer from '../components/Footer';
 import Loader from '../components/Loader';
 
 import homeBanner from '../assets/images/home-banner.png';
@@ -33,7 +31,6 @@ function Home(){
             {showLoader && 
                 <Loader/>
             }
-            <Header/>
             <Banner
             image={homeBanner}
             altText={"Cote boisée et montagneuse"}
@@ -42,7 +39,6 @@ function Home(){
             <CardsContainer
             list={accomodations}
             />
-            <Footer/>
         </div>
     )
 }

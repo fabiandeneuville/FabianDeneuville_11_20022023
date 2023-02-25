@@ -2,13 +2,11 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router";
 
-import Header from '../components/Header';
 import Carousel from '../components/Carousel';
 import AccomodationIntro from '../components/AccomodationIntro';
 import Rating from '../components/Rating';
 import Host from '../components/Host';
 import Collapse from '../components/Collapse';
-import Footer from '../components/Footer';
 import Loader from '../components/Loader';
 
 function Accomodation(props){
@@ -28,7 +26,7 @@ function Accomodation(props){
         .then((datas) => {
             const accomodation = datas.find((item) => item.id === id);
             if(!accomodation){
-                navigate('/not-found')
+                navigate('*')
             }
             setAccomodation(accomodation);
             setShowLoader(false)
@@ -44,8 +42,6 @@ function Accomodation(props){
             {showLoader &&
                 <Loader/>
             }
-            <Header/>
-
             {accomodation &&
                 <main className="accomodation__page__main">
                     <Carousel
@@ -96,7 +92,6 @@ function Accomodation(props){
                     </div>
                 </main>
             }
-            <Footer/>
         </div>
     )
 }
