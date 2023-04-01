@@ -6,7 +6,7 @@ const CollapseBody = styled.div`
     height: ${({ height })=> height}px;
     opacity: ${({ height })=> height > 0 ? 1 : 0};
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.2s ease-in-out;
 `
 function Collapse(props){
 
