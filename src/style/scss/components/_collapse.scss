@@ -27,18 +27,13 @@
         }
     }
 
-    &__content {
-        border-radius: 5px;
-        padding: 25px 15px;
-        margin-top: 2px;
+    &__body {
         background-color: $light-grey;
-        color: $primary-color;
-        animation-name: show;
-        animation-duration: 0.4s;
+    }
 
-        @include screen-sm {
-            font-size: 12px;
-        }
+    &__content {
+        padding: 15px;
+        font-size: 18px;
     }
 }
 

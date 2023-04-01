@@ -41,6 +41,7 @@
     
         &__description {
             font-size: 18px;
+            padding: 15px;
     
             @include screen-sm {
                 font-size: 13px;
@@ -50,6 +51,7 @@
         &__equipment__list {
             list-style-type: none;
             font-size: 18px;
+            padding: 15px;
     
             @include screen-sm {
                 font-size: 13px;
