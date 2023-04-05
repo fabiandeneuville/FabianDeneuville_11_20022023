@@ -16,25 +16,25 @@ function Accomodation(props){
     const [showLoader, setShowLoader] = useState(false);
 
     useEffect(() => {
+        const fetchAccomodation = (id) => {
+            setShowLoader(true)
+            fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
+            .then((response) => response.json())
+            .then((datas) => {
+                const accomodation = datas.find((item) => item.id === id);
+                if(!accomodation){
+                    navigate('*')
+                }
+                setAccomodation(accomodation);
+                setShowLoader(false)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        }
         fetchAccomodation(id)
-    }, [id])
+    }, [id, navigate])
 
-    const fetchAccomodation = (id) => {
-        setShowLoader(true)
-        fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
-        .then((response) => response.json())
-        .then((datas) => {
-            const accomodation = datas.find((item) => item.id === id);
-            if(!accomodation){
-                navigate('*')
-            }
-            setAccomodation(accomodation);
-            setShowLoader(false)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    }
 
     return (
 

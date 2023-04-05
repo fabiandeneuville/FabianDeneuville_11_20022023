@@ -12,19 +12,19 @@ function Home(){
     const [showLoader, setShowLoader] = useState(false)
 
     useEffect(() => {
+        const fetchAllAccomodations = () => {
+            setShowLoader(true)
+            fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
+            .then((response) => response.json())
+            .then((datas) => {
+                setAccomodations(datas)
+                setShowLoader(false)
+            })
+            .catch((error) => console.log(error))
+        }
         fetchAllAccomodations()
     }, [])
 
-    const fetchAllAccomodations = () => {
-        setShowLoader(true)
-        fetch('https://raw.githubusercontent.com/fabiandeneuville/FabianDeneuville_11_20022023/main/public/datas.json')
-        .then((response) => response.json())
-        .then((datas) => {
-            setAccomodations(datas)
-            setShowLoader(false)
-        })
-        .catch((error) => console.log(error))
-    }
 
     return (
         <div className="page">
