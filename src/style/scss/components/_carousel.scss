@@ -34,4 +34,12 @@
     & .previous {
         left: 15px;
     }
+
+    & .picture__count {
+        position: absolute;
+        color: white;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+    }
 }

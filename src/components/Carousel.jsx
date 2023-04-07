@@ -37,6 +37,11 @@ function Carousel(props){
                 onClick={(e) => navigate(e)}
                 />   
             }
+            {props.pictures.length > 1 &&
+                <div className='picture__count'>
+                    {`${currentPicture + 1} / ${props.pictures.length}`}
+                </div>
+            }
         </div>
     )
 }
